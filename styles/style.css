@@ -247,7 +247,7 @@
   justify-self: center;
   gap: 8px;
   box-sizing: border-box;
-  margin: 49px 0 96px;
+  margin: 49px auto 96px;
   border: var(--content-border);
   padding: 17px 20px;
   background-color: #fff;
@@ -332,7 +332,7 @@
 @media (width < 376px) {
   .save-button {
     flex-direction: column;
-    margin: 45px 0 98px;
+    margin: 45px auto 98px;
   }
 
   .header {
