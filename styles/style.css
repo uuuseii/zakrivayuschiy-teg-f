@@ -21,7 +21,7 @@
   margin: 100px 0 93px;
   border: var(--content-border);
   padding: clamp(7.625rem, 0.751vw + 7.449rem, 8.125rem) 0;
-  font-family: var(--accent-font), 'Courier New';
+  font-family: var(--accent-font), "Courier New";
   background-color: var(--content-background-color, #fff);
   inline-size: var(--content-width);
 }
@@ -57,6 +57,7 @@
 
 .card__image-container {
   position: relative;
+  margin: 0;
   border-top: var(--content-border);
   border-bottom: var(--content-border);
   overflow: hidden;
@@ -103,7 +104,7 @@
   top: 25px;
   right: 25px;
   opacity: 50%;
-  font-family: var(--accent-font), 'Courier New';
+  font-family: var(--accent-font), "Courier New";
   font-size: 14px;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   mix-blend-mode: hard-light;
@@ -149,7 +150,7 @@
 .button__text {
   z-index: 2;
   color: var(--text-color, #fff);
-  font-family: var(--accent-font), 'Courier New';
+  font-family: var(--accent-font), "Courier New";
   font-size: 14px;
   mix-blend-mode: difference;
 }
@@ -208,7 +209,7 @@
 }
 
 .card__like-icon:active .like-icon__core {
-  fill: var(--animation-fill-color,#ff0000);
+  fill: var(--animation-fill-color, #ff0000);
   transition-delay: 0s;
 }
 
@@ -227,7 +228,7 @@
 }
 
 .card__like-icon:active .like-icon__main-body {
-  fill: var(--animation-fill-color,#ff0000);
+  fill: var(--animation-fill-color, #ff0000);
   transition-delay: 0.05s;
 }
 
@@ -292,30 +293,30 @@
   line-height: 150%;
 }
 
+.dialog__text {
+  color: var(--accent-color, #000);
+  font-family: var(--accent-font), "Courier New";
+  font-size: 14px;
+}
+
 .dialog__button-ok {
   border: var(--content-border);
   padding: 12.5px 0;
   text-transform: uppercase;
 }
 
-.card__like-button,
-.save-button,
-.dialog__button-ok {
+.button__action-effects {
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
 
-.card__like-button:focus,
-.save-button:focus,
-.dialog__button-ok:focus {
+.button__action-effects:focus {
   box-shadow: 2px 2px 0 var(--accent-color, #000);
   outline: none;
 }
 
-.card__like-button::before,
-.save-button::before,
-.dialog__button-ok::before {
+.button__action-effects::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -324,9 +325,7 @@
   transform: translateX(-100%);
 }
 
-.card__like-button:hover::before,
-.save-button:hover::before,
-.dialog__button-ok:hover::before {
+.button__action-effects:hover::before {
   transform: translateX(0);
 }
 
