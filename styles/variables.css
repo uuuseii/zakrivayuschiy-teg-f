@@ -1,1 +1,45 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: 'Inter';
+  --accent-font: 'PressStart2P';
+
+  --main-text-color: #000;
+  --text-color: #fff;
+  --accent-color: #000;
+
+  --content-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+  --content-border: 2px solid var(--accent-color, #000);
+
+  --card-text-weight: 410;
+  --card-title-weight: 715;
+  --card-title-size: 18px;
+  --card-text-size: 18px;
+  --card-content-width: clamp(22.063rem, 27.512vw + 15.614rem, 40.375rem);
+
+  --image-container-size: clamp(23.438rem, 30.423vw + 16.307rem, 43.688rem);
+
+  --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-text-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+  --content-background-color: #fff;
+
+  --page-background-gradient: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0px 2px,
+    #d3d3d300 2px 4px
+  ), 
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0px 2px,
+    #d3d3d300 2px 4px
+  ),
+  linear-gradient(
+    to bottom,
+    #e7e7e7 0.01%,
+    #1a1a1a 100%
+  );
+
+  --like-icon-contour-color: #000;
+  --like-icon-sparks-color: #ff0000;
+  --animation-fill-color: #ff0000;
+  --like-icon-hover-color: #000;
+}
