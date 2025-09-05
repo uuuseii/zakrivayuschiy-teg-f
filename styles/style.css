@@ -51,7 +51,7 @@
 
 .card__title {
   padding: 4px 10px;
-  font-weight: var(--card-title-weight, 715);
+  font-variation-settings: "wght" var(--card-title-weight, 715);
   font-size: var(--card-title-size);
 }
 
@@ -121,7 +121,7 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 24.5px;
+  gap: 29px;
   padding: 25px 25px 22px 25px;
 }
 
@@ -340,7 +340,7 @@
   }
 
   .card__content {
-    gap: 23.5px;
+    gap: 28px;
   }
 
   .floppy-icon {
