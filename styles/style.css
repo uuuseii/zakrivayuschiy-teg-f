@@ -251,6 +251,7 @@
   border: var(--content-border);
   padding: 17px 20px;
   background-color: #fff;
+  inline-size: fit-content;
 }
 
 .floppy-icon {
